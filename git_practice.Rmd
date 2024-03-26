@@ -1,0 +1,25 @@
+---
+title: "Practicing with Git"
+author: "Zachary Katz"
+date: "2024-03-26"
+output: html_document
+---
+
+This is my first practice with git. 
+
+Here is some code:
+
+```{r}
+# Load the tidyverse
+library(tidyverse)
+
+# Generate a tibble with two columns, x and y
+plot_df = tibble(
+  x = rnorm(1000),
+  y = x^2
+)
+
+# Scatterplot of that tibble
+ggplot(data = plot_df, aes(x = x, y = y)) + geom_point()
+```
+
